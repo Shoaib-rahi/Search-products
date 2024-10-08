@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  body{
+    width: 100%;
+    height: 100vh;
+    background-color: #c9c9c9fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container{
+    /* display: flex;
+    justify-content: center;
+   flex-direction: column; */
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 30px black;
+    padding: 1vw 2vw;
+    overflow-y:scroll;
+  }
+  .container::-webkit-scrollbar{
+    display: none;
+  }
+  .container form{
+    width: 100%;
+
+    
+    padding: 2vw 1vw;
+    position: relative;
+  }
+  form input{
+    width: 100%;
+    border: 2px solid rgba(118, 94, 255, 0.418);
+    padding: 1vw 7vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  form i{
+    position: absolute;
+    top: 40px;
+    font-size: 1.8rem;
+    left: 3vw;
+  }
+  .product-lists{
+    width: 100%;
+  }
+  .products{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    gap: 2vw;
+    width: 100%;
+    background-color: rgba(218, 218, 218, 0.8);
+    border-radius: 20px;
+    margin-top: 1vw;
+    padding: 1vw 0;
+    color:black;
+    font-weight: bolder;
+    
+  }
+  .products img{
+    width: 80px;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+  }
+</style>
+
+<body>
+  <section class="container">
+    <form>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="search-item" placeholder="enter products name" onkeyup="search()">
+
+    </form>
+    
+
+
+    <div class="product-lists" id="product-lists">
+      <div class="products">
+        <img src="images/tshirt2.jpeg" alt="">
+         <div class="p-detials">
+          <h2>TshirtsForEveryone</h2>
+          <h3>$26</h3>
+         </div>
+      </div>
+      <div class="products">
+        <img src="images/tshirt1.jpeg" alt="">
+         <div class="p-detials">
+          <h2>Comfortable clothes</h2>
+          <h3>$268/h3>
+         </div>
+      </div>
+      <div class="products">
+        <img src="images/tshirt3.jpeg" alt="">
+         <div class="p-detials">
+          <h2>Comfortable tshirst</h2>
+          <h3>$299</h3>
+         </div>
+      </div>
+      <div class="products">
+        <img src="images/tshirt4.jpeg" alt="">
+         <div class="p-detials">
+          <h2>hoodies clothes for gentlamn</h2>
+          <h3>$26</h3>
+         </div>
+      </div>
+      <div class="products">
+        <img src="images/tshirt5.jpeg" alt="">
+         <div class="p-detials">
+          <h2>offwhite shirts for women</h2>
+          <h3>$26</h3>
+         </div>
+      </div>
+      <div class="products">
+        <img src="images/th.jpeg" alt="">
+         <div class="p-detials">
+          <h2>swimming clothes for swimmer</h2>
+          <h3>$26</h3>
+         </div>
+      </div>
+      <div class="products">
+        <img src="images/th1.jpeg" alt="">
+         <div class="p-detials">
+          <h2>TshirtsForEveryone</h2>
+          <h3>$26</h3>
+         </div>
+      </div>
+      <div class="products">
+        <img src="images/th3.jpeg" alt="">
+         <div class="p-detials">
+          <h2>TshirtsForEveryone</h2>
+          <h3>$26</h3>
+         </div>
+      </div>
+      <div class="products">
+        <img src="images/th7.jpeg" alt="">
+         <div class="p-detials">
+          <h2>sports clothes for players</h2>
+          <h3>$26</h3>
+         </div>
+      </div>
+      <div class="products">
+        <img src="images/tshirt.jpeg" alt="">
+         <div class="p-detials">
+          <h2>TshirtsForEveryone</h2>
+          <h3>$26</h3>
+         </div>
+      </div>
+      <div class="products">
+        <img src="images/tshirt2.jpeg" alt="">
+         <div class="p-detials">
+          <h2>fight clothes for human</h2>
+          <h3>$26</h3>
+         </div>
+      </div>
+      <div class="products">
+        <img src="images/tshirt5.jpeg" alt="">
+         <div class="p-detials">
+          <h2>TshirtsForEveryone</h2>
+          <h3>$26</h3>
+         </div>
+      </div>
+      <div class="products">
+        <img src="images/tshirt2.jpeg" alt="">
+         <div class="p-detials">
+          <h2>shalwar kameez for muslims</h2>
+          <h3>$26</h3>
+         </div>
+      </div>
+      <div class="products">
+        <img src="images/tshirt3.jpeg" alt="">
+         <div class="p-detials">
+          <h2>TshirtsForEveryone</h2>
+          <h3>$26</h3>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="game.js"></script>
+</body>
+</html>
